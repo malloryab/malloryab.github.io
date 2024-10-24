@@ -1,0 +1,33 @@
+body{
+    background-color: lavenderblush;
+}
+
+p{
+    text-indent: 50px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    color:aquamarine; 
+    font size: 24;
+}
+
+hr{
+    color:blueviolet;
+    height: 20px;
+    width: 50%;
+}
+
+#nhl{
+    position:absolute; top: 200px; left: 200px;
+    padding: 15px;
+    background-color: crimson;
+    border-style: solid;
+    border-color: black;
+}
+
+#headers{
+    padding: 15px;
+    background-color: blueviolet;
+}
