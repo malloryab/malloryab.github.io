@@ -1,0 +1,27 @@
+body{
+    background-color: white;
+}
+#backstory{
+    position:absolute; top: 0px; left: 325px;
+    font-size:larger;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#rba{
+    position:absolute; top: 200px; left:325px;
+}
+#cup{
+    position:absolute; top: 215px; left: 690px;
+    font-size: larger;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#logo{
+    position:absolute; top: 0px; left: 725px;
+}
+#stormy{
+    position:absolute; top: 420px; left: 750px
+}
+#lenovo{
+    position:absolute; top: 500px; left: 325px
+}
