@@ -76,7 +76,20 @@ tw-story{
 }
 
 #vacuum{
-  position:relative; top: -45%; left: 50%;</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="start" tags="" position="600,275" size="100,100">{&lt;div id=&quot;clock&quot;&gt;
+  position:relative; top: -45%; left: 50%;
+}
+
+#pompoms{
+  position:relative; left: 40%;
+}
+
+#pompoms1{
+  position:relative; top: -15%;
+}
+
+#pompoms2{
+  position:relative; top: -15%;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="start" tags="" position="600,275" size="100,100">{&lt;div id=&quot;clock&quot;&gt;
 &lt;img src=&quot;https://malloryab.github.io/graphics/clock.png&quot;&gt;
 &lt;/div&gt;}
 [Your mom is going out to run a few errands. Before she leaves, she tells you your room needs to be clean by the time she gets back, or you won&#39;t be allowed to go to the mall with your friends next weekend. She should be back in two hours, so get started!]
@@ -155,7 +168,7 @@ tw-story{
 &lt;div id=&quot;closet1&quot;&gt;
 (if: $body is &quot;dirty&quot;)[While cleaning your closet, you come across your old cheer uniform. Do you move past it and keep cleaning or try it on and do some of your old routines.
 [[Keep cleaning| keep cleaning]]
-[[Try it on| try it on]]]
+[[Try it on| try it on2]]]
 &lt;/div&gt;
 
 &lt;div id=&quot;closet2&quot;&gt;
@@ -172,17 +185,12 @@ tw-story{
 (else:)[[Clean the floor| floor]]}
 
 {(if: $laundry is &quot;clean&quot;)+(if: $surfaces or $floor is &quot;hidden&quot;)+(if: $closet is &quot;clean&quot;)[Looks like everything is clean! Now you need to await your mom&#39;s arrival! [[Finish.| ending 2]]]}
-{(if: $laundry is &quot;clean&quot;)+(if: $surfaces is &quot;clean&quot;)+(if: $floor is &quot;clean&quot;)+(if: $closet is &quot;clean&quot;)[Looks like everything is clean! Now you need to await your mom&#39;s arrival! [[Finish.| ending 3]]]}</tw-passagedata><tw-passagedata pid="10" name=" try it on" tags="" position="725,775" size="100,100">&lt;div id=&quot;pompoms&gt;
-&lt;img src=&quot;https://malloryab.github.io/graphics/pompoms2.png&quot;&gt;
-&lt;/div&gt;
-
-(if: $tiktokTime&lt;0.5)[You lost track of time and spent way too long playing around with your uniform. You need to [[get back to work| keep cleaning]] immediately if you want to be done before your mom gets home.]
-(if: $tiktokTime&gt;0.5)[You did not lock in like you were supposed to. Because of your dillydallying, your mom walked in on you doing stunts in the living room. She was not happy, she was not happy and has decided to [[punish| ending 1]] you.]</tw-passagedata><tw-passagedata pid="11" name=" ending 1" tags="" position="725,250" size="100,100">[Your mom was super angry that you didn&#39;t do anything she asked. Not only will you not be going to the mall with your friends, but she also said she&#39;s taking your phone for the next week. None of it was worth it because as soon as she was done grounding you, she made you clean your room anyway.]</tw-passagedata><tw-passagedata pid="12" name=" clean clean" tags="" position="850,525" size="100,100">[Now that you are clean, it&#39;s time to tackle your dirty room. Where should you start?]
+{(if: $laundry is &quot;clean&quot;)+(if: $surfaces is &quot;clean&quot;)+(if: $floor is &quot;clean&quot;)+(if: $closet is &quot;clean&quot;)[Looks like everything is clean! Now you need to await your mom&#39;s arrival! [[Finish.| ending 3]]]}</tw-passagedata><tw-passagedata pid="10" name=" ending 1" tags="" position="725,250" size="100,100">[Your mom was super angry that you didn&#39;t do anything she asked. Not only will you not be going to the mall with your friends, but she also said she&#39;s taking your phone for the next week. None of it was worth it because as soon as she was done grounding you, she made you clean your room anyway.]</tw-passagedata><tw-passagedata pid="11" name=" clean clean" tags="" position="850,525" size="100,100">[Now that you are clean, it&#39;s time to tackle your dirty room. Where should you start?]
 
 [[Do laundry| laundry]]
 [[Clean off surfaces| surfaces]]
 [[Clean the floor| floor]]
-[[Clean the closet| closet]]</tw-passagedata><tw-passagedata pid="13" name=" hide it in the closet" tags="" position="725,650" size="100,100">(set: $surfaces to &quot;hidden&quot;)
+[[Clean the closet| closet]]</tw-passagedata><tw-passagedata pid="12" name=" hide it in the closet" tags="" position="725,650" size="100,100">(set: $surfaces to &quot;hidden&quot;)
 
 [You hid all the clutter from your dresser in your closet. Hopefully your mom doesn&#39;t look in there when she gets back. What should you clean next?]
 
@@ -194,7 +202,7 @@ tw-story{
 (else:)[[Clean the closet| closet]]}
 
 {(if: $laundry is &quot;clean&quot;)+(if: $surfaces or $floor is &quot;hidden&quot;)+(if: $closet is &quot;clean&quot;)[Looks like everything is clean! Now you need to await your mom&#39;s arrival! [[Finish.| ending 2]]]}
-{(if: $laundry is &quot;clean&quot;)+(if: $surfaces is &quot;clean&quot;)+(if: $floor is &quot;clean&quot;)+(if: $closet is &quot;clean&quot;)[Looks like everything is clean! Now you need to await your mom&#39;s arrival! [[Finish.| ending 3]]]}</tw-passagedata><tw-passagedata pid="14" name=" clear surfaces" tags="" position="850,650" size="100,100">(set: $surfaces to &quot;clean&quot;)
+{(if: $laundry is &quot;clean&quot;)+(if: $surfaces is &quot;clean&quot;)+(if: $floor is &quot;clean&quot;)+(if: $closet is &quot;clean&quot;)[Looks like everything is clean! Now you need to await your mom&#39;s arrival! [[Finish.| ending 3]]]}</tw-passagedata><tw-passagedata pid="13" name=" clear surfaces" tags="" position="850,650" size="100,100">(set: $surfaces to &quot;clean&quot;)
 
 [Now that all the surfaces in your room are clean, it&#39;s time to move on to the next task.]
 
@@ -210,7 +218,7 @@ tw-story{
 
 &lt;div id=&quot;duster&quot;&gt;
 &lt;img src=&quot;https://malloryab.github.io/graphics/duster.png&quot;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name=" clean floor" tags="" position="475,650" size="100,100">(set: $floor to &quot;clean&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name=" clean floor" tags="" position="475,650" size="100,100">(set: $floor to &quot;clean&quot;)
 
 [Now that your floor is clear and vacuumed, your room feels so much cleaner! Time to move on to the next task.]
 
@@ -228,7 +236,7 @@ tw-story{
 
 &lt;div id=&quot;vacuum&quot;&gt;
 &lt;img src=&quot;https://malloryab.github.io/graphics/vacuum2.png&quot;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name=" hide it under bed" tags="" position="350,650" size="100,100">(set: $floor to &quot;hidden&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name=" hide it under bed" tags="" position="350,650" size="100,100">(set: $floor to &quot;hidden&quot;)
 
 [You slid the clutter from your floor under your bed. Hopefully your mom won&#39;t look there when she gets back. What should you clean next?]
 
@@ -240,12 +248,21 @@ tw-story{
 (else:)[[Clean the closet| closet]]}
 
 {(if: $laundry is &quot;clean&quot;)+(if: $surfaces or $floor is &quot;hidden&quot;)+(if: $closet is &quot;clean&quot;)[Looks like everything is clean! Now you need to await your mom&#39;s arrival! [[Finish.| ending 2]]]}
-{(if: $laundry is &quot;clean&quot;)+(if: $surfaces is &quot;clean&quot;)+(if: $floor is &quot;clean&quot;)+(if: $closet is &quot;clean&quot;)[Looks like everything is clean! Now you need to await your mom&#39;s arrival! [[Finish.| ending 3]]]}</tw-passagedata><tw-passagedata pid="17" name=" ending 2" tags="" position="600,900" size="100,100">{(set: $number to (random: 1,2))
+{(if: $laundry is &quot;clean&quot;)+(if: $surfaces is &quot;clean&quot;)+(if: $floor is &quot;clean&quot;)+(if: $closet is &quot;clean&quot;)[Looks like everything is clean! Now you need to await your mom&#39;s arrival! [[Finish.| ending 3]]]}</tw-passagedata><tw-passagedata pid="16" name=" ending 2" tags="" position="600,900" size="100,100">{(set: $number to (random: 1,2))
 (if: $number is 1)[Lucky for you, when your mom got home and looked at your room she didn&#39;t check any hidden spots for secret messes! You got away with your secret and get to go to the mall with your friends!]
-(if: $number is 2)[Unfortunatly, your mom thoroughly checked your room and found the mess you stashed away. She is very disappointed and has decided that you will not be going to the mall with your friends and she is taking your phone until you properly clean up the mess.]}</tw-passagedata><tw-passagedata pid="18" name=" ending 3" tags="" position="725,900" size="100,100">[Your mom came home and immediately saw your super clean room! She is very pleased that you did what was asked of you and has agreed to let you go to the mall with your friends. She even said she&#39;d give you some money to spend while you&#39;re there!]
+(if: $number is 2)[Unfortunatly, your mom thoroughly checked your room and found the mess you stashed away. She is very disappointed and has decided that you will not be going to the mall with your friends and she is taking your phone until you properly clean up the mess.]}</tw-passagedata><tw-passagedata pid="17" name=" ending 3" tags="" position="725,900" size="100,100">[Your mom came home and immediately saw your super clean room! She is very pleased that you did what was asked of you and has agreed to let you go to the mall with your friends. She even said she&#39;d give you some money to spend while you&#39;re there!]
 
 &lt;div id=&quot;card&quot;&gt;
 &lt;img src=&quot;https://malloryab.github.io/graphics/card.jpg&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name=" try it on2" tags="" position="725,775" size="100,100">{&lt;div id=&quot;pompoms&quot;&gt;
+&lt;img src=&quot;https://malloryab.github.io/graphics/pompoms2.png&quot;&gt;
+&lt;/div&gt;}
+
+&lt;div id=&quot;pompoms1&quot;&gt;
+(if: $tiktokTime&lt;0.5)[You lost track of time and spent way too long playing around with your uniform. You need to [[get back to work| keep cleaning]] immediately if you want to be done before your mom gets home.]
+&lt;/div&gt;
+&lt;div id=&quot;pompoms2&quot;&gt;
+(if: $tiktokTime&gt;0.5)[You did not lock in like you were supposed to. Because of your dillydallying, your mom walked in on you doing stunts in the living room. She was not happy, she was not happy and has decided to [[punish| ending 1]] you.]
 &lt;/div&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
